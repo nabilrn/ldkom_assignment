@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borrowing</title>
+    <link rel="stylesheet" href="assets/css/Borrow.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito"
+    />
+    <script src="assets/js/typing.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <div class="judul"><a href="Home.php"><span id="text"></span></a></div>
+          <div class="listmenu">
+            <ul>
+              <li><a href="Borrow.html" id="pinjam">Borrowing</a></li>
+              <li><a href="History.html">History</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- awal jumbotron -->
+    <div class="jumbotron">
+      <div class="layer">
+        <div class="pilihan">
+          <a href="#itemList">
+            <img src="assets/image/meminjam.jpg" alt="" />
+            <div class="nama-pilihan">
+              <p>Borrowing Item</p>
+            </div>
+          </a>
+        </div>
+        <div class="pilihan">
+          <a href="#formpinjamlabor">
+            <img src="assets/image/lab.jpeg" alt="" />
+            <div class="nama-pilihan">
+              <p>Borrowing The Laboratory Room</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- akhir jumbotron -->
+
+    <!-- awal item-list -->
+    <section id="itemList">
+    <main>
+      <h2 id="item">Item List</h2>
+      <div class="container">
+        <div class="listBarang">
+          <table cellspacing="0">
+            <thead>
+              <th>ID</th>
+              <th>Item Name</th>
+              <th>Item Code</th>
+              <th>Status</th>
+              <th>Action</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="card">
+                    <img src="assets/image/projector.jpg" alt="Card Image" />
+                    <div class="card-content">
+                      <p>Projector</p>
+                    </div>
+                  </div>
+                </td>
+                <td>PJ</td>
+                <td>Available✅</td>
+                <td>
+                  <input type="checkbox" id="Checkbox" name="myCheckbox" />
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <div class="card">
+                    <img src="assets/image/screen.jpg" alt="Card Image" />
+                    <div class="card-content">
+                      <p>Portable Screen</p>
+                    </div>
+                  </div>
+                </td>
+                <td>PS</td>
+                <td>Available✅</td>
+                <td>
+                  <input type="checkbox" id="Checkbox" name="myCheckbox" />
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <div class="card">
+                    <img src="assets/image/Computer.jpeg" alt="Card Image" />
+                    <div class="card-content">
+                      <p>Desktop PC</p>
+                    </div>
+                  </div>
+                </td>
+                <td>PC</td>
+                <td>Unavailable❌</td>
+                <td></td>
+              </tr>
+              <td class="baris"></td>
+              <td class="baris"></td>
+              <td class="baris"></td>
+              <td class="baris"></td>
+              <td class="btnborrow">
+                <button>
+                  <a href="#formpinjambarang">Borrow</a>
+                </button>
+              </td>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </section>
+    <!-- akhir item list -->
+
+    <!-- pinjam barang -->
+  <section id="formpinjambarang">
+    <div class="borrowItem">
+      <div class="layerr">
+        <h2>Form Borrowing Item</h2>
+      <div class="form">
+        
+        <input type="text" id="barang" name="barang" placeholder="Items" required />
+        <input type="text" id="nama" name="nama" placeholder="Name" required />
+        <input type="text" id="nim" name="nim" placeholder="NIM" required />
+        <label id="label1" for="tanggal">Borrowing Date</label>   
+        <input type="date" id="tanggal" name="tanggal"  required />
+        <label id="label2" for="tanggalkembali">Return Date</label>
+        <input type="date" id="tanggalkembali" name="tanggalkembali" placeholder="Return Date" required />
+        <textarea id="tujuan" name="tujuan" rows="4" placeholder="Reason" required></textarea>
+        <input type="tel" id="kontak" name="kontak" placeholder="Contact" required />
+        <button id="submit" type="submit"><a href="notif.html">Confirm</button></a>
+      </div>
+    </div>
+    </div>
+  </section>
+    <!-- akhir pinjam barang -->
+
+    <!-- pinjam labor -->
+    <section id="formpinjamlabor">
+    <div class="borrowLab">
+     
+        <h2>Form Borrowing Laboratory Room</h2>
+      <div class="formlab">
+        <input type="text" id="nama" name="nama" placeholder="Name" required />
+        <input type="text" id="nim" name="nim" placeholder="NIM" required />
+        <label for="tanggalll">Borrowing Date</label>   
+        <input type="date" id="tanggalll" name="tanggal"  required />
+        <label for="waktupinjam">Borrowing Time</label>
+        <input type="time" id="waktupinjam" name="waktupinjam"  required />
+        <textarea id="tujuan" name="tujuan" rows="4" placeholder="Reason" required></textarea>
+        <input type="tel" id="kontak" name="kontak" placeholder="Contact" required />
+        <button  id="submit" type="submit"><a href="notif.html">Borrow</button></a>
+      </div>
+    </div>
+  </section>
+    <!-- Akhir Pinjam labor -->
+    <footer>
+      <p>
+        &copy; copyright 2024 | built by.
+        <a href="http://instagram.com/nabilrizkinavisa"> Nabil Rizki Navisa </a>
+      </p>
+    </footer>
+    <script>
+      
+  </script>
+  </body>
+</html>

@@ -1,0 +1,362 @@
+body {
+  margin: 0;
+  font-family: "Nunito";
+  color: #000;
+}
+nav {
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  top: 0;
+  background-color: #000;
+  z-index: 1000;
+}
+.judul {
+  color: #ec9722;
+}
+.judul a {
+  text-decoration: none;
+  color: #ec9722;
+}
+
+.navbar {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.judul {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.listmenu {
+  font-weight: 600;
+}
+
+.listmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listmenu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.listmenu li a {
+  text-decoration: none;
+  color: #ec9722;
+  font-weight: lighter;
+}
+
+.listmenu li:hover {
+  font-weight: bolder;
+  text-shadow: 0px 2px 4px rgba(236, 151, 34, 0.5);
+}
+#pinjam {
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.container {
+  margin: auto;
+  width: 80%;
+  margin-top: 3%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(70, 200, 245, 1);
+}
+
+.listBarang {
+  margin-top: 4%;
+}
+.jumbotron {
+  background-image: url("../image/inventory.jpg");
+  background-attachment: fixed;
+  background-position: 0 -250px;
+  margin-top: 4%;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  text-align: center;
+}
+.layer {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbotron p {
+  font-size: 200%;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#item {
+  font-size: 150%;
+  margin-top: 2%;
+  text-align: center;
+}
+table {
+  border: 0.5px solid #46c8f5;
+  width: 100%;
+  text-align: center;
+}
+
+th {
+  padding: 2%;
+  color: #000;
+  border: 1px solid #46c8f5;
+}
+
+th:first-child {
+  width: 10%;
+}
+
+th:nth-child(2) {
+  width: 30%;
+}
+
+th:last-child {
+  width: 20%;
+}
+
+th:nth-child(4),
+th:nth-child(5) {
+  width: 24%;
+}
+
+td {
+  border: 1px solid #46c8f5;
+  border-top: none;
+  border-right: none;
+  padding: 3%;
+}
+.btnborrow {
+  border: none;
+}
+.btnborrow button:hover {
+  background-color: #9b9a9a;
+}
+.baris {
+  border: none;
+}
+.card {
+  width: 70%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+}
+
+.card img {
+  width: 80%;
+  height: auto;
+}
+
+.card-content {
+  padding: 1px;
+  border-top: 0.1px dotted #000;
+}
+.pilihan {
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 7%;
+}
+.pilihan:hover {
+  filter: blur(2px);
+}
+.pilihan a {
+  text-decoration: none;
+}
+.pilihan img {
+  width: 100%;
+  border-radius: 20px;
+  height: auto;
+}
+.nama-pilihan p {
+  font-size: 110%;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.btnborrow button {
+  background-color: #46c8f5;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.btnborrow a {
+  margin: auto;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Nunito";
+  font-size: 100%;
+}
+.pinjam:hover {
+  background-color: #9b9a9a;
+}
+.borrowItem {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-image: url("../image/meminjam.jpg");
+  background-size: cover;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Nunito";
+}
+.borrowLab {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-color: #fff;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Nunito";
+}
+.layerr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #000; /* Set the color to white or any other color you prefer */
+}
+
+.form {
+  width: 80%;
+  height: auto;
+  max-width: 40%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  border: 3px solid #9b9a9a;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.formlab {
+  width: 80%;
+  height: auto;
+  max-width: 40%;
+  background-image: url("../image/lab\ -\ Copy.jpeg");
+  border-radius: 30px;
+  border: 3px solid #9b9a9a;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.layerrr {
+  width: 80%;
+  height: auto;
+  max-width: 40%;
+  background-image: url("../image/lab.jpeg");
+  border-radius: 30px;
+  border: 3px solid #9b9a9a;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.form input,
+.form textarea,
+.formlab input,
+.formlab textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  text-align: center;
+  font-family: "Nunito";
+}
+
+.form textarea {
+  height: 100px;
+  font-family: "Nunito";
+}
+
+.form button,
+.formlab button {
+  background-color: #46c8f5;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin-top: 10px;
+  font-family: "Nunito";
+}
+#tanggal,
+#tanggalkembali,
+#tanggalpinjam {
+  font-family: "Nunito";
+}
+.form a,
+.formlab a {
+  font-style: "Nunito";
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+#submit:hover {
+  background-color: #9b9a9a;
+}
+label {
+  color: #fff;
+  font-weight: bold;
+}
+footer {
+  background-color: #ec9722;
+  color: #000;
+  text-align: center;
+  padding-top: 3px;
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+footer a:hover {
+  font-weight: bold;
+}
